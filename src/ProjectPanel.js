@@ -13,12 +13,8 @@ export default class extends React.Component{
   componentDidMount(){
     fetch('https://glacial-beyond-73904.herokuapp.com/projects')
       .then(response=>response.json())
-      .then(data=>{
-        this.setState({projects: data});
-      })
-      .catch(error=>{
-        console.log(error);
-      })
+      .then(data=>this.setState({projects: data}))
+      .catch(error=>console.log(error))
   }
 
   render(){
@@ -26,13 +22,13 @@ export default class extends React.Component{
     if(this.state.projects){
       items = this.state.projects.map(project=>{
         return (
-        <tr>
+        <tr key={project.ProjectName}>
           <td>{project.ProjectName}</td>
           <td>{moment().diff(moment(project.ProjectStartDate),'days')}</td>
         </tr>);
     })}
     else{
-      items = <tr><td>Still loading</td></tr>;
+      items = <tr><td>Projects data is loading</td></tr>;
     }
 
       
