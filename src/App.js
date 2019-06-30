@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import Overview from './Overview';
+//import Overview from './Overview';
+import Projects from './Projects';
 class App extends Component {
   render() {
     return (
       <div>
-        <Overview highlight="Overview" />
+        <Projects />
         
       </div>
     );
