@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link} from 'react-router-dom'
 
 export default function(){
   return (
@@ -6,7 +7,7 @@ export default function(){
         <nav className="navbar navbar-inverse navbar-fixed-top">
             <div className="container-fluid">
                 <div className="navbar-header">
-                    <a className="navbar-brand" href="/">WEB422 - Project Portal</a>
+                    <Link className="navbar-brand" to="/Overview">WEB422 - Project Portal</Link>
                 </div>
             </div>
         </nav>
