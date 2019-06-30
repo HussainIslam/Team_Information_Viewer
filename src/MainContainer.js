@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from './NavBar';
 import SideBar from './SideBar';
+import ProjectPanel from './ProjectPanel';
 
 export default function(props){
   return(
@@ -11,44 +12,11 @@ export default function(props){
           <SideBar highlight="Overview" />
           <div className="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
-            
+
           <h1 className="page-header">Overview</h1>
               <div className="row">
                 <div className="col-md-4">
-                  <div className="panel panel-default">
-                    <div className="panel-heading">
-                      <h3 className="panel-title">Projects</h3>
-                    </div>
-                    <div className="panel-body">
-                      <div className="table-responsive overview-table">
-                        <table className="table table-striped table-bordered">
-                          <tbody>
-                            <tr>
-                              <td>Project 1</td>
-                              <td>Active # Days</td>
-                            </tr>
-                            <tr>
-                              <td>Project 2</td>
-                              <td>Active # Days</td>
-                            </tr>
-                            <tr>
-                              <td>Project 3</td>
-                              <td>Active # Days</td>
-                            </tr>
-                            <tr>
-                              <td>Project 4</td>
-                              <td>Active # Days</td>
-                            </tr>
-                            <tr>
-                              <td>Project 5</td>
-                              <td>Active # Days</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <a href="/projects" className="btn btn-primary form-control">View All Project Data</a>
-                    </div>
-                  </div>
+                  <ProjectPanel />
                 </div>
                 <div className="col-md-4">
                   <div className="panel panel-default">
