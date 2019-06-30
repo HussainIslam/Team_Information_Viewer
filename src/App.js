@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import MainContainer from './MainContainer';
+import Overview from './Overview';
 class App extends Component {
   render() {
     return (
       <div>
-        <MainContainer />
+        <Overview highlight="Overview" />
         
       </div>
     );

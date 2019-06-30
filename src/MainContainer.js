@@ -13,8 +13,6 @@ export default function(props){
         <div className="row">
           <SideBar highlight="Overview" />
           <div className="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-
           <h1 className="page-header">Overview</h1>
               <div className="row">
                 <div className="col-md-4">
@@ -27,9 +25,6 @@ export default function(props){
                   <EmployeesPanel />
                 </div>
               </div>
-
-
-            
           </div>
         </div>
 
