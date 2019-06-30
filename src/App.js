@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 //import Overview from './Overview';
-import Projects from './Projects';
+//import Projects from './Projects';
+import Teams from './Teams';
 class App extends Component {
   render() {
     return (
       <div>
-        <Projects />
+        <Teams />
         
       </div>
     );
