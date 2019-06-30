@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import moment from 'moment';
 
 
@@ -45,7 +46,7 @@ export default class extends React.Component{
                 </tbody>
               </table>
             </div>
-            <a href="/projects" className="btn btn-primary form-control">View All Project Data</a>
+            <Link to="/Projects" className="btn btn-primary form-control">View All Project Data</Link>
           </div>
         </div>
       );

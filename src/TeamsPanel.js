@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 
 export default class extends React.Component{
@@ -43,7 +44,7 @@ export default class extends React.Component{
               </tbody>
             </table>
           </div>
-          <a href="/teams" className="btn btn-primary form-control">View All Team Data</a>
+          <Link to="/Teams" className="btn btn-primary form-control">View All Team Data</Link>
         </div>
       </div>
     )

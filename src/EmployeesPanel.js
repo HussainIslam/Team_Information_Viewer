@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 export default class extends React.Component{
@@ -45,7 +46,7 @@ export default class extends React.Component{
               </tbody>
             </table>
           </div>
-          <a href="/employees" className="btn btn-primary form-control">View All Employee Data</a>
+          <Link to="/Employees" className="btn btn-primary form-control">View All Employee Data</Link>
         </div>
       </div>
     );
